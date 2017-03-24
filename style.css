@@ -1,0 +1,62 @@
+html {
+  min-height: 100vh;
+  background-image: linear-gradient(#ff8f4f, #f46542);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+keyboard, .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+keyboard {
+  flex-wrap: wrap;
+}
+
+.result-list li.active {
+  background-color: #FFF;
+}
+
+
+
+
+.key {
+  margin: 20px;
+  display: inline-block;
+  min-width: 30px;
+  padding: 10px;
+  background-image: linear-gradient(#fff, #ccc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow:
+    inset 0px 0px 6px 0px #fff,
+    0px 20px 10px 0px rgba(0, 0, 0, 0.125),
+    0px 10px 0px 10px #aaa,
+    0px 11px 0px 11px #888,
+    0px 10px 20px 2px #000;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.key.active {
+  border: 1px solid #ddd;
+  background-image: linear-gradient(#FFFFBB, #FFFF55);
+  box-shadow:
+    inset 0px 0px 6px 0px #fff,
+    0px 20px 10px 0px rgba(0, 0, 0, 0.125),
+    0px 10px 0px 10px #888822,
+    0px 11px 0px 11px #555500,
+    0px 10px 20px 2px #000;
+  border: 1px solid #fff;
+}
