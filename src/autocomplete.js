@@ -15,7 +15,7 @@ export default class AutocompleteService {
       }
     }).done((data) => {
       const { searchSuggestions } = data.suggestionGroups[0]
-      const suggestions = searchSuggestions.map(suggestion => suggestion.displayText)
+      const suggestions = searchSuggestions.map(suggestion => suggestion.displayText).slice(0,5)
       callback(suggestions)
     })
   }

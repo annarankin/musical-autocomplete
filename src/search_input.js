@@ -8,7 +8,7 @@ const fakeResults = ["where can i find", "where can i find it", "where can i fin
 export default class SearchInput {
   constructor({ $parentEl }) {
     this.$parentEl = $parentEl
-    this.$el = $('<input>')
+    this.$el = $('<input class="search">')
     this.list = new ResultList()
     this.setEventListeners()
     this.autocomplete = new AutocompleteService()
@@ -24,7 +24,7 @@ export default class SearchInput {
 
   onChange(event) {
     // this.autocomplete.getSuggestions({ query: event.target.value }, this.renderResults.bind(this))
-    this.renderResults(fakeResults)
+    this.renderResults(fakeResults.slice(0,5))
   }
 
   render() {

@@ -6,15 +6,10 @@ export default class Result {
     this.chars = text.split('')
     this.$el = $(`<li data-id="${id}">${text}</li>`)
     this.beep = new Beep(audioContext, 440)
-    // this.setEventListeners()
     this.timeouts = []
     this.play = this.play.bind(this)
     this.stop = this.stop.bind(this)
   }
-
-  // setEventListeners() {
-  //   this.$el.on('click', this.play.bind(this))
-  // }
 
   play() {
     this.$el.addClass('active')

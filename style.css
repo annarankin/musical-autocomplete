@@ -1,33 +1,57 @@
-html {
+* {
+  box-sizing: border-box;
+}
+
+body {
   min-height: 100vh;
   background-image: linear-gradient(#ff8f4f, #f46542);
-  font-family: Helvetica, Arial, sans-serif;
 }
 
-html {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#main {
+  width: 60%;
+  margin: 0 auto;
 }
 
-keyboard, .row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.result-list {
+  max-height: 800px;
+  overflow: hidden;
+  margin: 0;
+  list-style-type: none;
+  padding-left: 0px;
+  font-size: 24px;
+  border: 2px solid #888;
+  border-top: none;
+  background-color: #FFF;
+  transition: max-height 1s;
 }
 
-keyboard {
-  flex-wrap: wrap;
+.result-list:empty {
+  border: none;
+  max-height: 0px
+}
+
+.result-list li {
+  padding: 1em;
+}
+
+.result-list li:hover {
+  background-color: #EEE;
 }
 
 .result-list li.active {
-  background-color: #FFF;
+  background-color: #369;
+  color: #FFF;
 }
 
+input.search {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 1em;
+  border: 2px solid #444;
+  width: 100%;
+}
 
-
-
+/*
 .key {
   margin: 20px;
   display: inline-block;
@@ -48,15 +72,4 @@ keyboard {
   text-transform: uppercase;
   font-weight: 400;
 }
-
-.key.active {
-  border: 1px solid #ddd;
-  background-image: linear-gradient(#FFFFBB, #FFFF55);
-  box-shadow:
-    inset 0px 0px 6px 0px #fff,
-    0px 20px 10px 0px rgba(0, 0, 0, 0.125),
-    0px 10px 0px 10px #888822,
-    0px 11px 0px 11px #555500,
-    0px 10px 20px 2px #000;
-  border: 1px solid #fff;
-}
+*/
