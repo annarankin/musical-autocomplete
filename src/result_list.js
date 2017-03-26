@@ -1,10 +1,10 @@
 import Result from './result'
 
 export default class ResultList {
-  constructor() {
+  constructor({ audioContext }) {
     this.$el = $('<ul class="result-list">')
     this.results = []
-    this.audioContext = new AudioContext()
+    this.audioContext = audioContext
     this.setEventListeners()
   }
 

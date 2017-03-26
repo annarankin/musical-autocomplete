@@ -30,6 +30,7 @@ body {
   max-height: 0px
 }
 
+
 .result-list li {
   padding: 1em;
 }
@@ -49,6 +50,21 @@ input.search {
   padding: 1em;
   border: 2px solid #444;
   width: 100%;
+}
+
+.viz-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 130px;
+  width: 100%;
+  background-color: #555;
+}
+
+.viz {
+  background-color: #369;
+  border-top: 2px solid #6AF;
+  width: 10%;
 }
 
 /*
